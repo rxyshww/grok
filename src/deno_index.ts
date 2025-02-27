@@ -1,7 +1,7 @@
 import { serve } from "https://deno.land/std@0.202.0/http/server.ts";
 
-const TARGET_URL = "https://grok.com";
-const ORIGIN_DOMAIN = "grok.com"; // 注意：此处应仅为域名，不含协议
+const TARGET_URL = "https://chatshare.xyz";
+const ORIGIN_DOMAIN = "chatshare.xyz"; // 注意：此处应仅为域名，不含协议
 
 async function handleWebSocket(req: Request): Promise<Response> {
   const { socket: clientWs, response } = Deno.upgradeWebSocket(req);
